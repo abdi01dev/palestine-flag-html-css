@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palestine Flag</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100dvh;
+        display: grid;
+        place-items: center;
+      }
+
+      .flag {
+        aspect-ratio: 2 / 1;
+        width: 40vw;
+        background-image: linear-gradient(#000000 33%, #ffffff 33%, #ffffff 66%, #008000 66%);
+      }
+
+      .flag::after {
+        content: '';
+        display: block;
+        width: 50%;
+        aspect-ratio: 1 / 1;
+        background-color: #ff0000;
+        clip-path: polygon(66% 50%, 0 0, 0 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag"></div>
+  </body>
+</html>
